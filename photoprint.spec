@@ -3,13 +3,14 @@ Name:		photoprint
 Version:	0.3.8b
 Release:	1
 License:	GPL
+######		Unknown group!
 Group:		Publishing
 Source0:	http://www.blackfiveservices.co.uk/photoprint_resources/%{name}-%{version}.tar.gz
 # Source0-md5:	9f8cc6552a799bbeeee42d64b2cb7a1a
 URL:		http://www.blackfiveservices.co.uk/photoprint.shtml
 #BuildRequires:	ImageMagick
-BuildRequires:	libgutenprint-devel
 BuildRequires:	lcms-devel
+BuildRequires:	libgutenprint-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -39,10 +40,10 @@ install -d $RPM_BUILD_ROOT%{_datadir}/photoprint/{borders,ProfilingKit} \
 	DESTDIR=$RPM_BUILD_ROOT
 
 # install man page
-install photoprint.1 $RPM_BUILD_ROOT%{_mandir}/man1/
+install photoprint.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
 # install menu icon
-mv $RPM_BUILD_ROOT/%{_iconsdir}/hicolor/48x48/apps/fotoprint.png $RPM_BUILD_ROOT%{_iconsdir}
+mv $RPM_BUILD_ROOT%{_iconsdir}/hicolor/48x48/apps/fotoprint.png $RPM_BUILD_ROOT%{_iconsdir}
 
 %find_lang %{name} --with-gnome
 
