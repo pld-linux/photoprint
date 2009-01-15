@@ -1,12 +1,12 @@
 Summary:	Photo Print - Prints photos in various layouts and with color management
 Name:		photoprint
-Version:	0.3.8b
+Version:	0.3.9
 Release:	1
 License:	GPL
 ######		Unknown group!
 Group:		Publishing
 Source0:	http://www.blackfiveservices.co.uk/photoprint_resources/%{name}-%{version}.tar.gz
-# Source0-md5:	9f8cc6552a799bbeeee42d64b2cb7a1a
+# Source0-md5:	a708d3a426b187ad6b0de0c6052262b9
 URL:		http://www.blackfiveservices.co.uk/photoprint.shtml
 #BuildRequires:	ImageMagick
 BuildRequires:	lcms-devel
