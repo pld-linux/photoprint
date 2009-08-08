@@ -7,7 +7,7 @@ License:	GPL
 Group:		Publishing
 Source0:	http://www.blackfiveservices.co.uk/photoprint_resources/%{name}-%{version}.tar.gz
 # Source0-md5:	a708d3a426b187ad6b0de0c6052262b9
-URL:		http://www.blackfiveservices.co.uk/photoprint.shtml
+URL:		http://blackfiveimaging.co.uk/index.php?article=02Software%2F01PhotoPrint
 #BuildRequires:	ImageMagick
 BuildRequires:	lcms-devel
 BuildRequires:	libgutenprint-devel

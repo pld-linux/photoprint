@@ -1,0 +1,9 @@
+- does not build:
+ i686-pld-linux-g++ -DHAVE_CONFIG_H -I. -I.. -D_FORTIFY_SOURCE=2 -Wall -I../imagesource/ -I../ -I../pixbufthumbnail -I../imagesource -I../profilemanager -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12 -O2 -fno-strict-aliasing -fwrapv -march=i686 -mtune=pentium4 -gdwarf-2 -g2 -MT signature.lo -MD -MP -MF .deps/signature.Tpo -c signature.cpp  -fPIC -DPIC -o .libs/signature.o
+In file included from signature.cpp:12:
+layoutrectangle.h: In member function 'void RectFit::Dump()':
+layoutrectangle.h:23: error: 'printf' was not declared in this scope
+layoutrectangle.h: In member function 'void LayoutRectangle::Dump()':
+layoutrectangle.h:45: error: 'printf' was not declared in this scope
+make[2]: *** [signature.lo] Error 1
+make[2]: Leaving directory `photoprint-0.3.9/support'
