@@ -1,14 +1,13 @@
 Summary:	Photo Print - Prints photos in various layouts and with color management
 Name:		photoprint
 Version:	0.3.9
-Release:	2
+Release:	3
 License:	GPL
-######		Unknown group!
-Group:		Publishing
+Group:		X11/Applications/Publishing
 Source0:	http://www.blackfiveservices.co.uk/photoprint_resources/%{name}-%{version}.tar.gz
 # Source0-md5:	a708d3a426b187ad6b0de0c6052262b9
+Patch0:		%{name}-stdio.patch
 URL:		http://blackfiveimaging.co.uk/index.php?article=02Software%2F01PhotoPrint
-#BuildRequires:	ImageMagick
 BuildRequires:	lcms-devel
 BuildRequires:	libgutenprint-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -24,6 +23,7 @@ to one round picture for a CD back.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 # Do not do any compiler optimizations, they break the program - MDK note
