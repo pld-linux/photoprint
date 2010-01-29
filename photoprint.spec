@@ -8,8 +8,13 @@ Source0:	http://www.blackfiveservices.co.uk/photoprint_resources/%{name}-%{versi
 # Source0-md5:	a708d3a426b187ad6b0de0c6052262b9
 Patch0:		%{name}-stdio.patch
 URL:		http://blackfiveimaging.co.uk/index.php?article=02Software%2F01PhotoPrint
+BuildRequires:	gettext-devel
+BuildRequires:	gtk+2-devel
 BuildRequires:	lcms-devel
 BuildRequires:	libgutenprint-devel
+BuildRequires:	libtiff-devel
+BuildRequires:	netpbm-devel
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
