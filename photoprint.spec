@@ -53,7 +53,7 @@ mv $RPM_BUILD_ROOT%{_iconsdir}/hicolor/48x48/apps/fotoprint.png $RPM_BUILD_ROOT%
 %find_lang %{name} --with-gnome
 
 %clean
-rm -fr $RPM_BUILD_ROOT
+rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
