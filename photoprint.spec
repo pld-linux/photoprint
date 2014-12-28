@@ -8,7 +8,7 @@ Source0:	http://www.blackfiveimaging.co.uk/photoprint/%{name}-%{version}.tar.gz
 # Source0-md5:	9db16efdccbecbcd0110aa67e21938ee
 Patch0:		%{name}-stdio.patch
 URL:		http://blackfiveimaging.co.uk/index.php?article=02Software%2F01PhotoPrint
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gtk+2-devel
 BuildRequires:	lcms-devel
 BuildRequires:	libgutenprint-devel
