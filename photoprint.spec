@@ -28,7 +28,7 @@ to one round picture for a CD back.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 # Do not do any compiler optimizations, they break the program - MDK note
